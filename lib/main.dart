@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() {
+import 'package:learn_flutter_67_1/screen/home.dart';
 
+void main() {
+  // runApp(const MyApp));
+  
   // const app = MaterialApp(title:"หัวข้อ", home: Text("Hello World!"));
   // runApp(app);
   runApp(MaterialApp(
@@ -12,34 +15,12 @@ void main() {
         backgroundColor:  Colors.pinkAccent,
         centerTitle: true,
       ),
-      body: Text("Hello World!"),
+      body: home(),
      ),
     ),
   );
 }
 
-class home extends StatelessWidget {
-  const home({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    // return Text("Hello Fluttrer! Step2"); 
-    return Center(
-      child: Container(
-        color: Colors.blueAccent,
-        margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        padding: EdgeInsets.all(50),
-        child: Text(
-          "Hello Flutter! Step3",
-          style: TextStyle(
-            fontSize: 30,
-            color: Colors.white,
-            fontWeight: FontWeight.bold, 
-          ),
-        ), 
-        ),
-    );
-    }
-  }
 
 
