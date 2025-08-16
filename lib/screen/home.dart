@@ -5,18 +5,72 @@ class home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset("assets/images/jk.jpg", width: 200, height: 200,),
-        const SizedBox(height: 20),
-        Image.network(
-          "https://upload.wikimedia.org/wikipedia/commons/0/07/Jungkook_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_01.jpg",
-          width: 200,
-          height: 200,
-        ),
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextButton(
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.red,
+            ),
+            onPressed: () {
+              print("Button Pressed");
+            },
+            child: const Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(height: 20),
+          FilledButton(
+          style: FilledButton.styleFrom(
+              backgroundColor: Colors.pinkAccent,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              print("Filled Button Pressed");
+            },
+            child: const Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ), 
+           const SizedBox(height: 20),
+          OutlinedButton(
+          style: OutlinedButton.styleFrom(
+              backgroundColor: Colors.pinkAccent,
+              side: const BorderSide(
+                color: Colors.pinkAccent,
+                width: 2,
+              ),
+            ),
+            onPressed: () {
+              print("Outlined Button Pressed");
+            },
+            child: const Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(height: 20),
+          ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.pinkAccent,
+              side: const BorderSide(
+                color: Colors.white ,
+                width: 2,
+              ),
+            ),
+            onPressed: () {
+              print("Outlined Button Pressed");
+            },
+            child: const Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),                                   
+        ],
+      )
     );
   }
 }
