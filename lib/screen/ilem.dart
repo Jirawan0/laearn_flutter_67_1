@@ -11,7 +11,7 @@ class Item extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<Item> {
- List data = ["สมชาย", "สมหญิง" "สมศรี",  "สมปอง", "สมจิตร" ];
+ List data = ["สมชาย", "สมหญิง", "สมศรี",  "สมปอง", "สมจิตร" ];
 
   @override
   Widget build(BuildContext context) {
