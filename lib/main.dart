@@ -1,31 +1,45 @@
-import 'package:flutter/material.dart';
-
+import 'package:flutter/material.dart' hide Item;
 import 'package:learn_flutter_67_1/screen/home.dart';
-
-import 'package:learn_flutter_67_1/screen/ilem.dart';
-
+import 'package:learn_flutter_67_1/screen/item.dart';
 import 'package:learn_flutter_67_1/screen/addForm.dart';
 
 void main() {
-  // runApp(const MyApp));
-  
-  // const app = MaterialApp(title:"หัวข้อ", home: Text("Hello World!"));
-  // runApp(app);
-  //runApp(MaterialApp(
-    //title: "หัวข้อ",
-    //home: Scaffold(
-      //appBar: AppBar(
-        //title: Text("My App"),
-        //backgroundColor:  Colors.pinkAccent,
-        //centerTitle: true,
-      //),
-      //body: Item(),
-     //),
-    //),
-  //);
-  runApp(const Addform());
+  // runApp(
+  //   MaterialApp(
+  //     title: "หัวข้อ",
+  //     home: Scaffold(
+  //       appBar: AppBar(
+  //         title: Text("My App"),
+  //         titleTextStyle: const TextStyle(
+  //           fontSize: 24,
+  //           fontWeight: FontWeight.bold,
+  //           color: Colors.white,
+  //         ),
+  //         backgroundColor: const Color.fromARGB(255, 64, 95, 251),
+  //         centerTitle: true,
+  //       ),
+  //     ),
+  //   ),
+  // );
+
+  runApp(const MyApp());
 }
 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-
-
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "My App",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("My App"),
+          backgroundColor: const Color.fromARGB(255, 64, 95, 251),
+          centerTitle: true,
+        ),
+        body: Item(),
+      ),
+    );
+  }
+}
