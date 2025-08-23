@@ -20,22 +20,22 @@ import 'package:flutter/material.dart';
 enum Job {
   engineer(
     title: "Engineer",
-    image: "assets/images/artie.jpg",
+    image: "assets/images/jk.jpg",
     color: Colors.blue,
   ),
   doctor(
     title: "Doctor",
-    image: "assets/images/artie.jpg",
+    image: "assets/images/jk.jpg",
     color: Colors.green,
   ),
   teacher(
     title: "Teacher",
-    image: "assets/images/artie.jpg",
+    image: "assets/images/jk.jpg",
     color: Colors.orange,
   ),
   artist(
     title: "Artist",
-    image: "assets/images/artie.jpg",
+    image: "assets/images/jk.jpg",
     color: Colors.purple,
   );
   final String title;
